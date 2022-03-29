@@ -1,0 +1,18 @@
+{
+  "name": "healthcheck-sample",
+  "version": "1.0.0",
+  "description": "Sample for a NodeJS with healthcheck",
+  "main": "index.js",
+  "scripts": {
+    "debug": "NODE_ENV=development nodemon --inspect=0.0.0.0:9229 index.js",
+    "start": "NODE_ENV=production node index.js",
+    "test": ""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

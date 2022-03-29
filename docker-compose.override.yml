@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+
+  healthcheck-sample:
+    user: root
+    build: 
+      context: ./
+      dockerfile: build/development.Dockerfile
+
+    ports:
+      - 9229:9229
+    volumes:
+      - ./:/home/node/app
+      - /home/node/app/node_modules
+      - /home/node/app/coverage

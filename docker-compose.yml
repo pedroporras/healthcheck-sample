@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+
+  healthcheck-sample:
+    build: 
+      context: .
+      dockerfile: build/production.Dockerfile
+
+    ports:
+      - 4000:3000
+    
